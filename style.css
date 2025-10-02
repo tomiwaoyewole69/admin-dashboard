@@ -5,8 +5,9 @@
 }
 body, html{
   height: 100%;
-  font-family: 'Roboto', system-ui, sans-serif;
   background-color: #eee;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-weight: 600;
 }
 .container{
   display: grid;
@@ -21,5 +22,29 @@ body, html{
 }
 .sidebar{
   grid-row: 1/3;
-  background-color: blue;
+  background-color: rgb(28, 142, 180);
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
+.dashboard, .sidebar li{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sidebar li{
+  font-size: 0.8em;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.icon{
+  color: #fff;
+  width: 40px;
+}
+.icon.links{
+  width: 25px;
+}
+
